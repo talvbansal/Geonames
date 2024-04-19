@@ -7,7 +7,6 @@ use Illuminate\Console\Command;
 use Carbon\Carbon;
 use Symfony\Component\DomCrawler\Crawler;
 use Curl\Curl;
-use composer require symfony/browser-kit;
 use StdClass;
 use MichaelDrennen\Geonames\Models\GeonamesDelete;
 use MichaelDrennen\Geonames\Models\Geoname;
