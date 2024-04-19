@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Console\Command;
 use Carbon\Carbon;
 use Symfony\Component\DomCrawler\Crawler;
+use \Symfony\Component\BrowserKit\HttpBrowser;
 use Curl\Curl;
 use StdClass;
 use MichaelDrennen\Geonames\Models\GeonamesDelete;
@@ -94,7 +95,7 @@ class UpdateGeonames extends AbstractCommand {
      *
      * @throws \Exception
      */
-    public function __construct( Curl $curl, Client $client ) {
+    public function __construct( Curl $curl, HttpBrowser $client ) {
         parent::__construct();
         $this->curl   = $curl;
         $this->client = $client;
